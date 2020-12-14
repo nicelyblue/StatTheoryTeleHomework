@@ -150,50 +150,50 @@ pyplot.show()
 probabilities = histogram / ascii_text_length
 
 mean = sum(probabilities * ascii_range)
-print('Srednja vrednost je: '+str(mean))
+print('Mean: '+str(mean))
 
 samp_mean = sample_mean(ascii_text, 10)
-print('Srednja vrednost (usrednjavanje po vremenu) je: '+str(samp_mean))
+print('Sample mean: '+str(samp_mean))
 
 mean_squares = sum(probabilities * ascii_range_squares)
-print('Srednja kvadratna vrednost je: '+str(mean_squares))
+print('Mean squared: '+str(mean_squares))
 
 samp_mean_squares = sample_mean(square(ascii_text), 10)
-print('Srednja kvadratna vrednost (usrednjavanje po vremenu) je: '+str(samp_mean_squares))
+print('Sample mean squared: '+str(samp_mean_squares))
 
 variance = mean_squares - mean**2
-print('Varijansa je: '+str(variance))
+print('Variance: '+str(variance))
 
 samp_variance = sample_variance(ascii_text, 10)
-print('Varijansa (usrednjavanje po vremenu) je: '+str(samp_variance))
+print('Sample variance: '+str(samp_variance))
 
 med = median(ascii_range, probabilities)
-print('Medijana je: '+str(med))
+print('Median: '+str(med))
 
 samp_median = sample_median(ascii_text, 10)
-print('Medijana (usrednjavanje po vremenu) je: '+str(samp_median))
+print('Sample median: '+str(samp_median))
 
 max_index = numpy.argmax(probabilities)
 modus = ascii_range[max_index]
-print('Modus je: '+str(modus))
+print('Mode: '+str(modus))
 
 samp_mode = sample_mode(ascii_text, 10)
-print('Modus (usrednjavanje po vremenu) je: '+str(samp_mode))
+print('Sample mode: '+str(samp_mode))
 
 print("\n\n\n")
 
 autocorrelation = autocorr(ascii_text)
 axis = range(0, len(autocorrelation))
-pyplot.title("Autokorelaciona funkcija")
-pyplot.xlabel("Koraci")
+pyplot.title("Autocorrelation")
+pyplot.xlabel("Timesteps")
 pyplot.plot(axis, autocorrelation, 'bo')
 pyplot.grid(True)
 pyplot.show()
 
 autocov = autocovariance(ascii_text)
 axis = range(0, len(autocov))
-pyplot.title("Autokovarijansa")
-pyplot.xlabel("Koraci")
+pyplot.title("Autocovariance")
+pyplot.xlabel("Timesteps")
 pyplot.plot(axis, autocorrelation, 'bo')
 pyplot.grid(True)
 pyplot.show()
@@ -209,50 +209,50 @@ pyplot.show()
 probabilities = histogram / binary_text_length
 
 mean = sum(probabilities * binary_range)
-print('Srednja vrednost je: '+ str(mean))
+print('Mean: '+ str(mean))
 
 samp_mean = sample_mean(binary_text, 10)
-print('Srednja vrednost (usrednjavanje po vremenu) je: '+str(samp_mean))
+print('Sample mean: '+str(samp_mean))
 
 mean_squares = sum(probabilities * binary_range_squares)
-print('Srednja kvadratna vrednost je: '+str(mean_squares))
+print('Mean squared: '+str(mean_squares))
 
 samp_mean_squares = sample_mean(square(binary_text), 10)
-print('Srednja kvadratna vrednost (usrednjavanje po vremenu) je: '+str(samp_mean_squares))
+print('Sample mean squared: '+str(samp_mean_squares))
 
 variance = mean_squares - mean**2
-print('Varijansa je: '+str(variance))
+print('Variance: '+str(variance))
 
 samp_variance = sample_variance(binary_text, 10)
-print('Varijansa (usrednjavanje po vremenu) je: '+str(samp_variance))
+print('Sample variance: '+str(samp_variance))
 
 med = median(binary_range, probabilities)
-print('Medijana je: '+str(med))
+print('Median: '+str(med))
 
 samp_median = sample_median(binary_text, 10)
-print('Medijana (usrednjavanje po vremenu) je: '+str(samp_median))
+print('Sample median: '+str(samp_median))
 
 max_index = numpy.argmax(probabilities)
 modus = binary_range[max_index]
-print('Modus je: '+str(modus))
+print('Mode: '+str(modus))
 
 samp_mode = sample_mode(binary_text, 10)
-print('Modus (usrednjavanje po vremenu) je: '+str(samp_mode))
+print('Sample mode: '+str(samp_mode))
 
 print("\n\n\n")
 
 autocorrelation = autocorr(binary_text)
 axis = range(0, len(autocorrelation))
-pyplot.title("Autokorelaciona funkcija")
-pyplot.xlabel("Koraci")
+pyplot.title("Autocorrelation")
+pyplot.xlabel("Timesteps")
 pyplot.plot(axis, autocorrelation, 'bo')
 pyplot.grid(True)
 pyplot.show()
 
 autocov = autocovariance(binary_text)
 axis = range(0, len(autocov))
-pyplot.title("Autokovarijansa")
-pyplot.xlabel("Koraci")
+pyplot.title("Autocovariance")
+pyplot.xlabel("Timesteps")
 pyplot.plot(axis, autocorrelation, 'bo')
 pyplot.grid(True)
 pyplot.show()
@@ -268,48 +268,48 @@ pyplot.show()
 probabilities = histogram / binary_compressed_text_length
 
 mean = sum(probabilities * binary_compressed_range)
-print('Srednja vrednost je: '+str(mean))
+print('Mean: '+str(mean))
 
 samp_mean = sample_mean(binary_compressed_text, 10)
-print('Srednja vrednost (usrednjavanje po vremenu) je: '+str(samp_mean))
+print('Sample mean: '+str(samp_mean))
 
 mean_squares = sum(probabilities * binary_compressed_range_squares)
-print('Srednja kvadratna vrednost je: '+str(mean_squares))
+print('Mean squared: '+str(mean_squares))
 
 samp_mean_squares = sample_mean(square(binary_compressed_text), 10)
-print('Srednja kvadratna vrednost (usrednjavanje po vremenu) je: '+str(samp_mean_squares))
+print('Sample mean squared: '+str(samp_mean_squares))
 
 variance = mean_squares - mean**2
-print('Varijansa je: '+str(variance))
+print('Variance: '+str(variance))
 
 samp_variance = sample_variance(binary_compressed_text, 10)
-print('Varijansa (usrednjavanje po vremenu) je: '+str(samp_variance))
+print('Sample variance: '+str(samp_variance))
 
 med = median(binary_compressed_range, probabilities)
-print('Medijana je: '+str(med))
+print('Median: '+str(med))
 
 samp_median = sample_median(binary_compressed_text, 10)
-print('Medijana (usrednjavanje po vremenu) je: '+str(samp_median))
+print('Sample median: '+str(samp_median))
 
 max_index = numpy.argmax(probabilities)
 modus = binary_compressed_range[max_index]
-print('Modus je: '+str(modus))
+print('Mode: '+str(modus))
 
 samp_mode = sample_mode(binary_compressed_text, 10)
-print('Modus (usrednjavanje po vremenu) je: '+str(samp_mode))
+print('Sample mode: '+str(samp_mode))
 
 autocorrelation = autocorr(binary_compressed_text)
 axis = range(0, len(autocorrelation))
-pyplot.title("Autokorelaciona funkcija")
-pyplot.xlabel("Koraci")
+pyplot.title("Autocorrelation")
+pyplot.xlabel("Timesteps")
 pyplot.plot(axis, autocorrelation, 'bo')
 pyplot.grid(True)
 pyplot.show()
 
 autocov = autocovariance(binary_compressed_text)
 axis = range(0, len(autocov))
-pyplot.title("Autokovarijansa")
-pyplot.xlabel("Koraci")
+pyplot.title("Autocovariance")
+pyplot.xlabel("Timesteps")
 pyplot.plot(axis, autocorrelation, 'bo')
 pyplot.grid(True)
 pyplot.show()
