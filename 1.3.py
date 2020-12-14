@@ -58,8 +58,8 @@ for j in range(0, 9999):
 R = autocorr(binary_output_lsfr5)
 x = range(0, len(R))
 
-plt.title("Autokorelaciona funkcija")
-plt.xlabel("Koraci")
+plt.title("Autocorrelation")
+plt.xlabel("Timestep")
 plt.plot(x, R, 'bo')
 plt.grid(True)
 plt.show()
